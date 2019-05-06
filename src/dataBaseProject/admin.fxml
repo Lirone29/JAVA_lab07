@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="537.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dataBaseProject.administratorController">
+    <children>
+        <Button fx:id="addAppointmentButton" layoutX="400.0" layoutY="80.0" mnemonicParsing="false" onAction="#addAppoinment" prefHeight="35.0" prefWidth="120.0" text="Add Appointment" />
+        <Button fx:id="addPatientButton" layoutX="400.0" layoutY="20.0" mnemonicParsing="false" onAction="#insertPatient" prefHeight="35.0" prefWidth="120.0" text="Add Patient" />
+        <Button fx:id="cancelAppointmentButton" layoutX="400.0" layoutY="140.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" text="Cancel Appointment" />
+        <Button fx:id="showScheduleButton" layoutX="400.0" layoutY="200.0" mnemonicParsing="false" onAction="#showSchedule" prefHeight="35.0" prefWidth="120.0" text="Show Schedule" />
+        <TextField fx:id="nameTextField" layoutX="30.0" layoutY="30.0" promptText="Name" />
+        <TextField fx:id="surnameTextField" layoutX="200.0" layoutY="30.0" promptText="Surname" />
+        <TextField fx:id="dateTextField" layoutX="30.0" layoutY="80.0" promptText="Date (yyyy-MM-dd)" />
+        <TextField fx:id="beginTextField" layoutX="30.0" layoutY="130.0" promptText="Begin Time (HH:MM:SS)" />
+        <TextField fx:id="endTimeTextField" layoutX="200.0" layoutY="130.0" promptText="End Time" />
+      <TableView fx:id="tableView" layoutX="30.0" layoutY="292.0" prefHeight="200.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="doctorIDColumn" prefWidth="75.0" text="DoctorID" />
+            <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="beginTimeColumn" prefWidth="75.0" text="BeginTime" />
+            <TableColumn fx:id="endTimeColumn" prefWidth="75.0" text="End Time" />
+            <TableColumn fx:id="patientIDColumn" prefWidth="75.0" text="patientID" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

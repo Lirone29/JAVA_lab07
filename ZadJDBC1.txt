@@ -1,0 +1,57 @@
+﻿Napisz aplikację z zastosowaniem JDBC, która pozwoli obsłużyć proces rejestracji pacjentów w przychodni. 
+Program powinien obsłużyć:
+- dane osobowe pacjentów
+- dane lekarzy
+- pokoje przyjęć
+- godziny przyjęć
+- limity przyjęć
+- zarejestrowane wizyty
+- zakończone wizyty
+
+
+//Program systemu rejestracji pacjentó  wprzychodni 
+Pancjeni do lekarzy
+//Kilku lekarzy, w ciągu tygodnia godziny przyjęć np co 20 min, i określona ilość
+
+W określonych dniach tygodniach, w określonych gofdiznach z interwałęm
+plus Limit przyjęć np 10/20 
+
+//Po wizycie - Lekarz zapisuje wynik wizyty - Zalecenie
+//Jeśli pacjent nie przyszedł, witytat
+//Odwoływanie rejestracji - administracyjnie - aplikacja obługiwana przez panią przy telefonie 
+//Lekarz widzi bedąc w pracy, kto jest zapisany 
+//Inna zakładka/inny panel - Panel Lekarza, przypisane wityty  zakończona z zaleceniem, zakończona - pacjent się nie pojawil
+
+//Panel Rejestratora
+Umożliwienie rejestracji oraz wskazania ze rejestracja sie odbyła i że są zalecenia poo wizycie 
+
+//APLIKACJA na SQLite
+- jar na driver sql'owy
+- plugin deuWiwer - z poziomu ecllipsa plugin
+- plugin do Firefoxa 
+- aplikacja stojaca osopno/pluIn do przeglądarki
+- shcemat bazydanych - poleceniem create - 
+- na inteniejacej sqlitowej bazie danych
+
+STANDARDOWY SPOSobów
+ - klejenie Stringów
+- zapytania prepared statement
+definiowanie użytownikowi zapytanie, tawiajac znaki zapytania, 
+setami wrzucic wartosci i odpalić
+
+
+//Dodawanie lekarzy
+SQL injection - parametr w zapytania, który paramater moze być stringiem i zagnieżdżone zapytanie danych
+SQL select .. from ... where ? (miejsce na wklejenie danych)
+Polecenia przygotowane wlejaja wartość, a nie dowolny cia znakó
+
+ZAPYTANIA PRZYGOTOWANE 
+UWAGA!!!!!!!!!!!!!!!!
+- brak zagnieżdżeń !!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+

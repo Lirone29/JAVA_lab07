@@ -1,0 +1,17 @@
+JDBC
+
+
+
+
+
+Repozytoria, model , adnotacje, jak siê generuje schematy
+Hibernate
+
+JPA
+Java Pesistency Api
+
+
+
+Aplikavcaj zarz¹dzania rejestracja 
+
+//Maven z lini komend

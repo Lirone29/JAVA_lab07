@@ -1,0 +1,24 @@
+DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+
+
+  dateVisit = new Date();
+        System.out.println( dateFormat.format(dateVisit));
+        String tmpDate =  dateFormat.format(dateVisit).toString();
+       // dateFormat.format(dateVisit)
+        if(conn!=null) {
+            statement = conn.createStatement();
+            String sql = "SELECT visit.patientID, visit.visitID, status FROM visit WHERE (visit.doctorID = '"+doctorID+"' AND visit.date = '"+tmpDate+"');";
+
+
+            ResultSet rs = statement.executeQuery(sql);
+
+            System.out.println("Appointment: \n"+
+                    rs.getInt("visitID") + "\n " +
+                    rs.getInt("patientID")
+            );
+
+
+            rs.close();
+        }
+
